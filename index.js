@@ -3,7 +3,13 @@ import cors from "cors";
 import { google } from "googleapis";
 
 const app = express();
-app.use(cors());
+
+app.use(cors({
+  origin: "https://wedding6.onrender.com",
+  methods: ["GET", "POST"],
+  allowedHeaders: ["Content-Type"]
+}));
+
 app.use(express.json());
 
 // Cargamos credenciales del Service Account desde variables de entorno

@@ -1,0 +1,11 @@
+{
+  "name": "wedding-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "googleapis": "^118.0.0",
+    "cors": "^2.8.5"
+  }
+}
